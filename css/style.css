@@ -180,7 +180,7 @@ h6,
     }
 }
 
-
+/* #0f116b */
 /*** Hero Header ***/
 .hero-header {
     background:
@@ -189,11 +189,23 @@ h6,
         url(../img/bg-round.png),
         url(../img/bg-bottom-hero.png);
     background-position:
-        10px 10px,
+        10px 100px,
         bottom 190px right 10px,
         left 55% top -1px,
         center bottom -1px;
     background-repeat: no-repeat;
+}
+
+/*** Logo Wrapper ***/
+.logo-wrapper {
+    margin-right: 15px;
+}
+
+.logo-wrapper2 {
+    width: 75px;
+    margin-right: 15px;
+    background:
+    url(../img/logo_white.png);
 }
 
 
