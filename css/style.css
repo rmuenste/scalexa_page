@@ -94,10 +94,7 @@ h6,
     color: var(--dark) !important;
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-    color: var(--secondary) !important;
-}
+
 
 .navbar-light .navbar-brand h1 {
     color: #FFFFFF;
@@ -211,6 +208,11 @@ h6,
     url(../img/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.sticky-top.navbar-light .logo-wrapper2 {
+    background-image:
+    url(../img/logo_purple.png);
 }
 
 /*** Section Title ***/
