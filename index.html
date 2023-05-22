@@ -38,9 +38,17 @@ especially with respect to the coupling of space and time parallelization on sup
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript">
+        function generateEmail() {
+            var username = "raphael.muenster";
+            var domain = "tu-dortmund.de";
+            var email = username + "@" + domain;
+            document.getElementById("email").textContent = email;
+        }
+    </script>
 </head>
 
-<body>
+<body onload="generateEmail()">
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -501,8 +509,8 @@ especially with respect to the coupling of space and time parallelization on sup
                     <div class="col-md-6 col-lg-4">
                         <h5 class="text-white mb-4">Contact Us</h5>
                         <p><i class="fa fa-map-marker-alt me-3"></i>Vogelpothsweg 87, 44227 Dortmund Germany</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope me-3"></i>muaphael@tu-dortmund.com</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+49 231 7556825</p>
+                        <p><i class="fa fa-envelope me-3"></i><span id="email"></span></p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
