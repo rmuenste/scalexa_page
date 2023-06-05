@@ -36,12 +36,12 @@
             var domain = "tu-dortmund.de";
             var email = username + "@" + domain;
             document.getElementById("email").textContent = email;
-            document.getElementById("email2").textContent = email;
         }
     </script>
 </head>
 
 <body onload="generateEmail()">
+<body>
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -67,8 +67,8 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="project.html" class="nav-item nav-link">Project</a>
-                        <a href="results.html" class="nav-item nav-link ">Results</a>
+                        <a href="project.html" class="nav-item nav-link active">Project</a>
+                        <a href="results.html" class="nav-item nav-link">Results</a>
                         <!-- 
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -79,7 +79,7 @@
                             </div>
                         </div>
                         Navbar & Hero Start -->
-                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
                 </div>
@@ -89,13 +89,13 @@
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">Contact Us</h1>
+                            <h1 class="text-white animated zoomIn">Project</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Supercomputers</li>
                                 </ol>
                             </nav>
                         </div>
@@ -125,26 +125,37 @@
         <!-- Full Screen Search End -->
 
 
-        <!-- Contact Start -->
+        <!-- Service Start -->
         <div class="container-xxl py-5">
             <div class="container px-lg-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-7">
-                        <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                            <h6 class="position-relative d-inline text-primary ps-4">Contact Us</h6>
-                            <h2 class="mt-2">Contact For Any Query</h2>
-                        </div>
-                        <div class="wow fadeInUp" data-wow-delay="0.3s">
-                        <p><i class="fa fa-solid fa-user me-3"></i>Raphael Münster</p>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>Vogelpothsweg 87, 44227 Dortmund Germany</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+49 231 7556825</p>
-                        <p><i class="fa fa-envelope me-3"></i><span id="email2"></span></p>
-                        </div>
+                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="position-relative d-inline text-primary ps-4"> Supercomputers (FzJ) - (FAU)</h6>
+                    <h2 class="mt-2">Supercomputers & Acceleration Hardware</h2>
+                    <div>
+                        The Jülich Supercomputing Centre (JSC), as part of the FZJ, operates one of the most powerful 
+                        supercomputer infrastructures in Europe and makes it available to researchers in NRW, Germany, and 
+                        Europe. In mid-2022, it was also announced that the application by the Gauss Center for 
+                        Supercomputing, with the FZJ as the site for the first European Exascale Supercomputer, was 
+                        successful. This will allow the first European supercomputer to be directly usable by the FZJ 
+                        within the duration of this project and be realized in new FEATFLOW versions, which are sustainably 
+                        capable of exploiting the high performance of future EXASCALE computer architectures and making 
+                        them available for StrömungsRaum®. By involving the Simulation and Data Laboratory 
+                        "Highly-Scalable Fluids & Solids Engineering" of the Jülich Research Center, the partners also aim 
+                        to build an Exascale Community in this area with a view to the first European Exascale 
+                        supercomputer, in order to pass on, deepen and broaden the expertise gained. Challenges in this 
+                        area arise in high degrees of scaling, heterogeneous and complex node architectures with deep 
+                        memory hierarchies (including HBM memories in the CPU area) and the growing breadth in CPU 
+                        processors (especially in the area of x86- and ARM-based systems), GPU processors (NVIDIA, AMD, 
+                        Intel Ponte Vecchio) and heterogeneous, flexible concepts such as the EPI. The project follows a 
+                        co-design approach that can qualitatively or quantitatively evaluate the efficiency of alternatives 
+                        in algorithms, data structures, and implementations with respect to fundamental architectural 
+                        properties with performance models (e.g., using SIMD-like concepts or new memory 
+                        hierarchies/technologies), thereby allowing a targeted selection.                        
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Contact End -->
+        <!-- Service End -->
         
 
         <!-- Footer Start -->

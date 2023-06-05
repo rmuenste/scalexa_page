@@ -36,12 +36,12 @@
             var domain = "tu-dortmund.de";
             var email = username + "@" + domain;
             document.getElementById("email").textContent = email;
-            document.getElementById("email2").textContent = email;
         }
     </script>
 </head>
 
 <body onload="generateEmail()">
+<body>
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -67,8 +67,8 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="project.html" class="nav-item nav-link">Project</a>
-                        <a href="results.html" class="nav-item nav-link ">Results</a>
+                        <a href="project.html" class="nav-item nav-link active">Project</a>
+                        <a href="results.html" class="nav-item nav-link">Results</a>
                         <!-- 
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -79,7 +79,7 @@
                             </div>
                         </div>
                         Navbar & Hero Start -->
-                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
                 </div>
@@ -89,13 +89,13 @@
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">Contact Us</h1>
+                            <h1 class="text-white animated zoomIn">Project</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">UzK TUF</li>
                                 </ol>
                             </nav>
                         </div>
@@ -125,26 +125,54 @@
         <!-- Full Screen Search End -->
 
 
-        <!-- Contact Start -->
+        <!-- Service Start -->
         <div class="container-xxl py-5">
             <div class="container px-lg-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-7">
-                        <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                            <h6 class="position-relative d-inline text-primary ps-4">Contact Us</h6>
-                            <h2 class="mt-2">Contact For Any Query</h2>
-                        </div>
-                        <div class="wow fadeInUp" data-wow-delay="0.3s">
-                        <p><i class="fa fa-solid fa-user me-3"></i>Raphael Münster</p>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>Vogelpothsweg 87, 44227 Dortmund Germany</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+49 231 7556825</p>
-                        <p><i class="fa fa-envelope me-3"></i><span id="email2"></span></p>
-                        </div>
+                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="position-relative d-inline text-primary ps-4">Universität zu Köln (UzK) - Technical University Freiberg (TUF)</h6>
+                    <h2 class="mt-2">FROSch – Fast and Robust Overlapping Schwarz Domain Decomposition Methods (Nonlinear FROSch (UzK), Multi-Level-FROSch (TUF))</h2>
+                        <div>
+                        FROSch [36, 87] is a solver software package of the open-source 
+                        software library Trilinos [88], which is primarily developed at UzK and TUF in cooperation with 
+                        Sandia National Laboratories, USA. In FROSch, we will extend parallel overlapping domain 
+                        decomposition methods for fluid problems in terms of scalability towards exascale, improve the use 
+                        of GPU accelerators, and make the methods usable for StrömungsRaum®. Starting from already 
+                        developed monolithic, overlapping Schwarz methods for linear Stokes and nonlinear Navier-Stokes 
+                        equations [32, 33], we will pursue two different strategies to make the user software 
+                        StrömungsRaum® exascale-capable. In the first strategy (TUF), we will combine it with the latest 
+                        variants of the algebraic 3-level FROSch methods [39]. For such variants of the recently developed 
+                        algebraic 3-level FROSch solvers [39], scalability was achieved for up to 220,000 cores of the 
+                        Theta supercomputer (Argonne) [40], after scalability for up to almost 100,000 cores of the 
+                        SuperMUC-NG supercomputer (LRZ, Munich) had been demonstrated before [40]. Differences in the 
+                        performance of Theta compared to SuperMUC-NG in [40] suggest further flexibility of the coarse grid 
+                        communication patterns in FROSch, which should occur for the new methods in this project. Due to 
+                        the algebraic structure of FROSch, no grid hierarchies are required for the construction of coarse 
+                        grid problems on the second and third level, as they are usually required for geometric multigrid 
+                        methods. Such difficult grids occur regularly in typical applications of IANUS due to complex 
+                        geometries, see example 1 and fig. 1. In the second strategy (UzK), we will combine nonlinear 
+                        overlapping Schwarz methods [38] with the monolithic domain decomposition methods for the 
+                        Navier-Stokes equations [32, 33]. Nonlinear non-overlapping domain decomposition methods of the 
+                        FETI-DP type have already scaled in parallel on the supercomputer Mira (Argonne) on up to 786,432 
+                        cores [46] as well as on almost the entire Theta (Argonne) [47]. Based on these experiences, the 
+                        approaches from [38] are to be further developed and combined with the methods from [32, 33]. In 
+                        the present project, the algorithms thus obtained will be implemented in FROSch. This is expected 
+                        to greatly reduce the number of (pseudo-)time steps necessary for convergence of the respective 
+                        nonlinear solution procedure. In combination with the nonlinear flow problems, significant parallel 
+                        scalability progress towards exascale is expected. By using Kokkos [11], the use of GPU accelerator 
+                        hardware by these new linear and nonlinear algorithms is made possible. The current FROSch 
+                        implementation [36, 87] will be connected to FEATFLOW and thus to the StrömungsRaum® platform 
+                        through an abstract interface. Both the integration of FROSch into Trilinos and the connection to 
+                        FEATFLOW, as well as the use by IANUS in StrömungsRaum®, ensure sustainable software development 
+                        and availability. The further development of the FROSch framework is also being driven forward in 
+                        two DFG-funded research projects: one project in SPP2256 deals with the thermo-chemo-mechanics of 
+                        nonlinear materials; the project in SPP2311 deals with pharmaco-mechanical fluid-structure 
+                        interaction. However, in both projects the target architecture is not exascale, but parallel 
+                        computers of conventional size and architecture are targeted.                        
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Contact End -->
+        <!-- Service End -->
         
 
         <!-- Footer Start -->

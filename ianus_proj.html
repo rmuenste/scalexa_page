@@ -36,12 +36,12 @@
             var domain = "tu-dortmund.de";
             var email = username + "@" + domain;
             document.getElementById("email").textContent = email;
-            document.getElementById("email2").textContent = email;
         }
     </script>
 </head>
 
 <body onload="generateEmail()">
+<body>
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -67,8 +67,8 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="project.html" class="nav-item nav-link">Project</a>
-                        <a href="results.html" class="nav-item nav-link ">Results</a>
+                        <a href="project.html" class="nav-item nav-link active">Project</a>
+                        <a href="results.html" class="nav-item nav-link">Results</a>
                         <!-- 
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -79,7 +79,7 @@
                             </div>
                         </div>
                         Navbar & Hero Start -->
-                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
                 </div>
@@ -89,13 +89,13 @@
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">Contact Us</h1>
+                            <h1 class="text-white animated zoomIn">Project</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">IANUS</li>
                                 </ol>
                             </nav>
                         </div>
@@ -125,26 +125,27 @@
         <!-- Full Screen Search End -->
 
 
-        <!-- Contact Start -->
+        <!-- Service Start -->
         <div class="container-xxl py-5">
             <div class="container px-lg-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-7">
-                        <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                            <h6 class="position-relative d-inline text-primary ps-4">Contact Us</h6>
-                            <h2 class="mt-2">Contact For Any Query</h2>
-                        </div>
-                        <div class="wow fadeInUp" data-wow-delay="0.3s">
-                        <p><i class="fa fa-solid fa-user me-3"></i>Raphael Münster</p>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>Vogelpothsweg 87, 44227 Dortmund Germany</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+49 231 7556825</p>
-                        <p><i class="fa fa-envelope me-3"></i><span id="email2"></span></p>
-                        </div>
+                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="position-relative d-inline text-primary ps-4">IANUS Simulation GmbH</h6>
+                    <h2 class="mt-2">IANUS Simulation</h2>
+                    <div>
+                    The IANUS Simulation GmbH [90], with its approximately 50 employees, has now stood for 
+                    experience and expertise in the field of 3D CFD simulation for 16 years. In addition to simulations 
+                    for the plastics industry, the optimization of machines for the pharmaceutical and food industries, 
+                    as well as the design of chemical reactors, ovens or heat exchangers, and the simulation of air and 
+                    wind flows are core competencies. The business areas encompass pure services and individual 
+                    software solutions. In the automation of processes in the execution of simulations, IANUS is one of 
+                    the leading companies with 20 automation projects per year for clients from various industries. The 
+                    technical core is the StrömungsRaum® framework [85], which provides mature software solutions and 
+                    high-performance.                        
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Contact End -->
+        <!-- Service End -->
         
 
         <!-- Footer Start -->
